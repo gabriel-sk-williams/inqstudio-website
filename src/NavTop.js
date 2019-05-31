@@ -52,13 +52,13 @@ class NavTop extends Component {
 										activeImage={this.activeImage}
 										/>
 				<ul className="flex">
-					<li className="col-9-12 left">						
+					<li className="col-11-12 left">						
 						<Link to='/'><h1 className="click grey">machine</h1><br/></Link>
 						<Link to='/'><h1 className="click black">inq</h1></Link>
 						<Link to='/'><h1 className="click grey">uiry</h1><br/></Link>
 						<Link to='/'><h1 className="click black">studio</h1></Link>	
 					</li>
-					<li className="col-3-12 right">
+					<li className="col-1-12 right">
 						<Link to='/'><h2 id='nav' className={resClass}>research</h2></Link>
 						<Link to='/visual/'><h2 id='nav' className={visClass}>visual</h2></Link>
 						<Link to='/contact/'><h2 id='nav' className={conClass}>contact</h2></Link>

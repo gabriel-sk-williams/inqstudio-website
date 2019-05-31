@@ -64,13 +64,13 @@ class Viewer extends Component {
 
     const rightArrow = img.index < images.length-1 ? 
       <div className="right-arrow" onClick={this.incrementRight}>
-        <IconArrow type="right"  />
+        <IconArrow type="right" />
       </div> : null;
 
     
     const leftArrow = img.index > 0 ? 
     <div className="left-arrow" onClick={this.incrementLeft}>
-      <IconArrow type="left"  />
+      <IconArrow type="left" />
     </div> : null;
     
     const fileMap = files.map((img, i) => {
@@ -94,11 +94,11 @@ class Viewer extends Component {
           {container}
           <div className="half-break" />
           <div className="flex table">
-            <div className="col-10-12">
+            <div className="col-9-12">
               <h4>{img.title}</h4>
               <h5><i>{img.subtext}</i></h5>
             </div>
-            <div className="col-2-12 right">
+            <div className="col-3-12 right">
               {fileMap}
             </div>
           </div>
