@@ -49,9 +49,7 @@ class Research extends Component {
   }
 
   changeEntry = (index) => {
-    this.setState({
-      activeEntry: index,
-    })
+    this.setState({ activeEntry: index, });
     this.props.changeEntry(index);
   }
 

@@ -8,7 +8,7 @@ class I004 extends Component {
     return (
       <div className="appear grid-break">
         <h3>
-        As a continuation of <Link to='/003/'>my last essay</Link>, I hereby present <i>The Olympics of Weights and Measures</i>, where the world's remaining measurement systems compete for dominance on the world stage. External to science and post-feudal taxation, there are numerous contexts where the use of alternative units is a regular benefit; likewise, the metric system was not designed at all for humans, but many traditional units were. In general, when determining the best unit we must consider: what is really being compared, and why is that comparison valuable? How much does the system need to scale, and at what level of granularity, to be most convenient for users who need to communicate useful information quickly and efficiently? Let's find out:
+        As a continuation of <Link to='003'>my last essay</Link>, I hereby present <i>The Olympics of Weights and Measures</i>, where the world's remaining measurement systems compete for dominance on the world stage. External to science and post-feudal taxation, there are numerous contexts where the use of alternative units is a regular benefit; likewise, the metric system was not designed at all for humans, but many traditional units were. In general, when determining the best unit we must consider: what is really being compared, and why is that comparison valuable? How much does the system need to scale, and at what level of granularity, to be most convenient for users who need to communicate useful information quickly and efficiently? Let's find out:
         <br/><br/>
         TEMPERATURE — Champion: Fahrenheit
         <br/>
