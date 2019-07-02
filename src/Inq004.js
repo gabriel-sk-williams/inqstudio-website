@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Research from './Research';
 import './Inqstyles.css';
 
-class InqStudio extends Component {
+class Inq004 extends Component {
 
   constructor () {
     super();
@@ -14,13 +14,13 @@ class InqStudio extends Component {
   }
 
   render() {
-    const page = this.state.activeEntry;
+    const page = this.state.activeEntry;    
     return (
-      <section>
+      <section>  
         <Research activeEntry={page} progress={false} />
       </section>
     );
   }
 }
 
-export default InqStudio;
+export default Inq004;

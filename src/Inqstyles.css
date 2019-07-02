@@ -126,6 +126,13 @@ h3 {
                                   supported by Chrome and Opera */
 }
 
+a {
+  color:var(--color-darkgrey);
+  font-weight: 600;
+}
+a:hover, a:visited {
+  color:var(--color-grey);
+}
 q {
   font-family:'EB Garamond', serif;
   font-weight: 300;
@@ -213,6 +220,7 @@ sup, sub {
   vertical-align: baseline;
   position: relative;
   top: -0.4em;
+  font-size: smaller;
 }
 
 /*

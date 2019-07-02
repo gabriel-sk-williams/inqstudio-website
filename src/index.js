@@ -4,6 +4,7 @@ import InqStudio from './InqStudio';
 import Inq001 from './Inq001';
 import Inq002 from './Inq002';
 import Inq003 from './Inq003';
+import Inq004 from './Inq004';
 import Visual from './Visual';
 import Contact from './Contact';
 import * as serviceWorker from './serviceWorker';
@@ -17,6 +18,7 @@ function AppRouter() {
             <Route path="/001/" component={Inq001} />
             <Route path="/002/" component={Inq002} />
             <Route path="/003/" component={Inq003} />
+            <Route path="/004/" component={Inq004} />
             <Route path="/visual/" component={Visual} />
             <Route path="/contact/" component={Contact} />
             </Switch>

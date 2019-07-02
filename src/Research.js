@@ -3,6 +3,7 @@ import NavTop from './NavTop';
 import I001 from './I001';
 import I002 from './I002';
 import I003 from './I003';
+import I004 from './I004';
 import EntryList from './EntryList';
 import Progress from './Progress';
 import './Inqstyles.css';
@@ -25,17 +26,24 @@ class Research extends Component {
         },
         { 
           number: "002",
-          title: "Baby Steps",
+          title: "A Modern Neologic",
           date: "13 April 2019",
           tags: "language, noumena, post-structuralism",
           index: 2
         },
         { 
           number: "003",  
-          title: "In Defense of Fahrenheit",
+          title: "Absolute Units",
           date: "27 May 2019",
-          tags: "metrology, scale, granularity",
+          tags: "scale, relevance, granularity",
           index: 3
+        },
+        { 
+          number: "004",  
+          title: "At Scale of Men",
+          date: "1 July 2019",
+          tags: "Actus quadratus, furlongs, Fahrenheit",
+          index: 4
         }]
     }
   }
@@ -51,7 +59,8 @@ class Research extends Component {
     const { activeEntry, progressBar, entries } = this.state;
     const content = activeEntry === 1 ? <I001 /> :
                     activeEntry === 2 ? <I002 /> :
-                    activeEntry  === 3 ? <I003 /> : null;
+                    activeEntry  === 3 ? <I003 /> :
+                    activeEntry  === 4 ? <I004 /> : null;
 
     
     const sidebar = progressBar ? <Progress /> :
