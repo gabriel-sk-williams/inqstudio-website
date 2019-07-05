@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/static/media/trophySquare.9a646b7c.jpg"
   },
   {
-    "revision": "44e8f07ba6713f62bfe1eace57017490",
+    "revision": "24a56aa0a7fc4c4b7b3b4d70cb599a50",
     "url": "/index.html"
   }
 ];
