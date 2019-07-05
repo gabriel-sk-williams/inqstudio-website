@@ -16,7 +16,7 @@ class Contact extends Component {
     return (
       <div className="appear grid-break">
         <h3>inq was founded in 2015 in New York City as an interdisciplinary studio dedicated to technology-drived processes and product development.</h3><br/><br/>
-        <h3>Our written research cultivates a framework for new approaches to contemporary problems; we espouse rigorous methodlogies drawing from philosophy, economics, and historiography to achieve a deeper understanding of complex systems and develop technology projects to address them.</h3>
+        <h3>Our written research cultivates a framework for new approaches to contemporary problems; we espouse rigorous methodologies drawing from philosophy, economics, and historiography to achieve a deeper understanding of complex systems and develop technology projects to address them.</h3>
       </div>
     )
   };
