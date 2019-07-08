@@ -11,9 +11,9 @@ class I002 extends Component {
         In order to start a meaningful conversation about sustainability, we need to explore more precise frameworks of study; in this essay, we dig into the nature and limitations of language, and how it affects discourse on complex topics.
         </i>
         <br/><br/>
-        One of the biggest problems with the word 'sustainability' is the unique internalized definition that each individual person holds. Two people can talk broadly about cities, cars, energy, and environmental policy without ever really touching on a core understanding of which solutions might be best. What are we really talking about? Sustainability is so hard to pin down—and so embedded in progressive philosophy—that it deserves some analysis to bring its true meaning to light.
+        What is sustainability, really? Here we have a term, so embedded in contemporary progressive philosophy, that serves as a catch-all for energy, ecology, urbanism, cars, environmental policy—you name it. We use the term with <i>some</i> mutual, surface-level understanding—but—what are we really talking about? Sustainability is no math problem; it is a product of language(!)—one which is due some analysis to bring its true meaning to light.
         <br/><br/>
-        Two major treatments on meaning and language come to mind: one of them would be Immanuel Kant’s Critique of Pure Reason (1781), and the other lies, well, somewhere in the depths of mid-twentieth century Post-Structuralism. There is a tension between the two systems that we’ll discuss here, but they are also two sides of the same coin—and both are indispensable to having any real discussion about sustainability on local or world stages.
+        Two major treatments on meaning and language come to mind: one of them would be Immanuel Kant’s Critique of Pure Reason (1781), and the other lies somewhere in the depths of mid-twentieth century Post-Structuralism. There is a tension between the two systems that we’ll discuss here, but they are also two sides of the same coin—and both are indispensable to having any real discussion about sustainability on local or world stages.
         <br/><br/>
         <b>part one: noumena</b>
         <br/><br/>
