@@ -13,11 +13,14 @@ class NavTopMobile extends Component {
         return 	(
             <nav className="">
                 <div className="nav-table">
-                    <div className="mobile-left col-6-12"
-                              onClick={this.handleClick}>
-                    </div>
+                    <div className="mobile-left col-6-12" onClick={this.handleClick} />
                     <div className="mobile-right col-6-12">
-                        <ExitShape x1="0" x2="50" className={exitClass} onClick={this.handleClick} />
+                        <ExitShape 
+                            x1="0" 
+                            x2="50" 
+                            className={exitClass} 
+                            onClick={this.handleClick} 
+                        />
                     </div>
                 </div>
             </nav>

@@ -31,7 +31,7 @@ class NavMobile extends Component {
             );
         })
 
-        const imageList = this.state.images.map((img) => {
+        const productList = this.state.images.map((img) => {
             const id = img.index;
             return (
                 <h4 key={id} className="click" onClick={() => this.changeImage(id)}>{img.title}</h4>
@@ -50,19 +50,19 @@ class NavMobile extends Component {
                             <Link to='/'><h1 className="click black">studio</h1></Link>
                         </li>
                         <li className="left half-break" onClick={this.menuToggle}>
-                            <Link to='/'><h1>Research</h1></Link>
+                            <Link to='/research/000'><h1>Research</h1></Link>
                             <div className="list-select">
                                 {researchList}
                             </div>
                         </li>
                         <li className="left half-break" onClick={this.menuToggle}>
-                            <Link to='/visual/'><h1>Visual</h1></Link>
+                            <Link to='/'><h1>Production</h1></Link>
                             <div className="list-select">
-                                {imageList}
+                                {productList}
                             </div>
                         </li>
                         <li className="left half-break" onClick={this.menuToggle}>
-                            <Link to='/contact/'><h1>Contact</h1></Link>
+                            <Link to='/profile/'><h1>Profile</h1></Link>
                         </li>
                     </ul>
                 </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import InqStudio from './InqStudio';
+import Inq000 from './Inq000';
 import Inq001 from './Inq001';
 import Inq002 from './Inq002';
 import Inq003 from './Inq003';
 import Inq004 from './Inq004';
-import Visual from './Visual';
-import Contact from './Contact';
+import Production from './Production';
+import Profile from './Profile';
+
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,13 +15,13 @@ function AppRouter() {
     return (
         <Router>
             <Switch>
-                <Route path="/" exact component={InqStudio} />
-                <Route path="/001/" component={Inq001} />
-                <Route path="/002/" component={Inq002} />
-                <Route path="/003/" component={Inq003} />
-                <Route path="/004/" component={Inq004} />
-                <Route path="/visual/" component={Visual} />
-                <Route path="/contact/" component={Contact} />
+                <Route path="/" exact component={Production} />
+                <Route path="/research/000" component={Inq000} />
+                <Route path="/research/001/" component={Inq001} />
+                <Route path="/research/002/" component={Inq002} />
+                <Route path="/research/003/" component={Inq003} />
+                <Route path="/research/004/" component={Inq004} />
+                <Route path="/profile/" component={Profile} />
             </Switch>
         </Router>
     );

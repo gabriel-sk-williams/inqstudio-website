@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Image from './Image';
-import IconArrow from './IconArrow';
 import './Inqstyles.css';
 
 class Viewer extends Component {
@@ -9,94 +8,62 @@ class Viewer extends Component {
     super(props);
 
     this.state = {
-      activeImage: props.activeImage || 0,
-      images: props.images || [],
-      selected: props.selected || 0,
-      animated: false
+      display: props.display,
+      index: 0
     }
   }
 
-  imageSelect = (index) => (event) => {
+  select = (index) => (event) => {
     this.setState({
-      selected: index,
-      animated: true
-    }, () => {
-      requestAnimationFrame(()=> {
-        this.setState({
-          animated: false
-        })
-      })
-    })
+      index: index,
+    });
   }
 
-  incrementRight = () => {
+  increment = () => {
     this.setState((prevState) => ({
-      activeImage: prevState.activeImage+1,
-    }))
-  }
-
-  incrementLeft = () => {
-    this.setState((prevState) => ({
-      activeImage: prevState.activeImage-1,
+      index: (prevState.index + 1) % prevState.display.files.length
     }))
   }
 
   componentWillUpdate(nextProps) {
     if(this.props !== nextProps) {
       this.setState({
-        activeImage: nextProps.activeImage,
-        selected: 0,
-        animated: true
-      }, () => {
-        requestAnimationFrame(()=> {
-          this.setState({
-            animated: false
-          })
-        })
-      })
+        display: nextProps.display,
+        index: 0
+      });
     }
   }
-  
+
   render() {
-    const { images, activeImage, selected } = this.state;
-    const img = images[activeImage];
-    const files = img.files;
+    const { title, subtext, files } = this.state.display;
+    const index = this.state.index;
 
-    const rightArrow = img.index < images.length-1 ? 
-      <div className="right-arrow" onClick={this.incrementRight}>
-        <IconArrow type="right" />
-      </div> : null;
+    const fileClass = files.map((f, i) => 
+      i === index ? "pad-select click bold" : "pad-select click");
 
-    
-    const leftArrow = img.index > 0 ? 
-    <div className="left-arrow" onClick={this.incrementLeft}>
-      <IconArrow type="left" />
-    </div> : null;
-    
-    const fileMap = files.map((img, i) => {
-      return (
-        <h6 className="pad-select click" key={i} onClick={this.imageSelect(i)}>
+    const fileMap = files.map((img, i) =>
+      <h6 key={i} className={fileClass[i]} onClick={this.select(i)}>
         {i+1}
-        </h6>
-      );
-    })
+      </h6>
+    );
 
-    const container = this.state.animated ? <div/> :
-      <div className="image-container">
-        {leftArrow}
-        <Image  src={require("./" + files[selected] + ".jpg")}
-                className={"quick-appear center-fit"} />;
-        {rightArrow}
-      </div>
+    const container = this.state.animated 
+      ? <div/> 
+      : <div className="image-container" onClick={this.increment}>
+          <Image
+            src={require("./images/" + files[index])}
+            className={"quick-appear center-fit"}
+          />;
+        </div>
                 
     return (
-        <section>  
+        <section>
           {container}
           <div className="half-break" />
           <div className="flex table">
             <div className="col-9-12">
-              <h4>{img.title}</h4>
-              <h5><i>{img.subtext}</i></h5>
+              <h4>{title}</h4>
+              <h5><i>{subtext}</i></h5>
             </div>
             <div className="col-3-12 right">
               {fileMap}
@@ -106,5 +73,6 @@ class Viewer extends Component {
     );
   }
 }
+
 
 export default Viewer;

@@ -50,11 +50,13 @@ class Menu extends Component {
 						y2: coords.ybot,
 							}
 		return (
-			<svg 	ref="hamburger" 
-						onClick={this.handleClick} 
-						className={this.props.className} 
-						style={{cursor: 'pointer'}}
-						width="55" height="55" xmlns="http://www.w3.org/2000/svg" >
+			<svg 	
+				ref="hamburger" 
+				onClick={this.handleClick} 
+				className={this.props.className} 
+				style={{cursor: 'pointer'}}
+				width="55" height="55" xmlns="http://www.w3.org/2000/svg" 
+			>
 
 				<line {...coords0} strokeWidth={2.5} />
 				<line {...coords1} strokeWidth={2.5} />

@@ -23,13 +23,13 @@ class EntryList extends Component {
   render() {
     const list = this.state.entries.map((entry) => {
       const i = entry.index;
-      const link = entry.number;
+      const link = "/research/" + entry.number;
+      
       if (i !== this.state.activeEntry){
         return(
           <Link to={link} key={i}>
             <div className="slow-appear grid-break right">
               <h3 className="click">{entry.number + ": " + entry.title}</h3>
-              <h2 className="click">{entry.date}</h2>
               <h2 className="italic">{entry.tags}</h2>
             </div>
           </Link>               
@@ -37,7 +37,7 @@ class EntryList extends Component {
         }else{
           return null;
         }
-      })
+    })
 
     return (
       <div>

@@ -142,7 +142,7 @@ class Thumbnails extends Component {
         return(
           <div key={i}>
             <div onClick={this.handleClick(i)}>
-              <Image  src={require("./" + image.thumb)}
+              <Image  src={require("./images/" + image.thumb)}
                       className={"thumbnail"} />
             </div>
             <div className="thumb-divider" />
