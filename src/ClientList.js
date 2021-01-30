@@ -51,11 +51,13 @@ class ClientList extends Component {
     render() {
         const logos = this.state.logos.map((logo, i) =>
           <li key={i} className="logo-container">
-            <img  
-              src={require("./logos/" + logo.file)}
-              className={"slow-appear logo"}
-              alt={logo.alt}
-            />
+            <a rel="noopener noreferrer" href={logo.link} target="_blank">
+              <img  
+                src={require("./logos/" + logo.file)}
+                className={"slow-appear logo"}
+                alt={logo.alt}
+              />
+            </a>
           </li>
         );
 
