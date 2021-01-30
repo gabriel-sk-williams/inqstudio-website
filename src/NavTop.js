@@ -6,18 +6,14 @@ import { Link } from "react-router-dom";
 class NavTop extends Component {
 
 	constructor (props) {
-    super(props);
+		super(props);
 
-    this.state = {
+		this.state = {
 			menuStatus: false,
 			activePage: props.activePage || "production",
 			entries: props.entries || [],
-			images: props.images || []
-    }
-  }
-
-	handleClick = () => {
-		this.menuToggle();
+			projects: props.projects || []
+			}
 	}
 
 	menuToggle = () => {
@@ -26,14 +22,15 @@ class NavTop extends Component {
 		});
 	}
 	
-	activeImage = (id) => {
+	changeProject = (id) => {
 		this.props.onClick(id);
 	}
 
 	render() {
-		const production = this.props.activePage === "production";
-		const research = this.props.activePage === "research";
-		const profile = this.props.activePage === "profile";
+		const { activePage, entries, projects, menuStatus } = this.state;
+		const production = activePage === "production";
+		const research = activePage === "research";
+		const profile = activePage === "profile";
 
 		const productClass = production ? "menu bold" : "menu";
 		const resClass = research ? "menu bold" : "menu";
@@ -41,34 +38,35 @@ class NavTop extends Component {
 
 		const homeClass = "nav-top";
 		const hamburgerClass = "hamburger";
-		const mobileClass = this.state.menuStatus ? "nav-mobile open" : "nav-mobile closed";
+		const mobileClass = menuStatus ? "nav-mobile open" : "nav-mobile closed";
 
-    return 	(
-		<nav className={homeClass}>
-			<NavMobile 	
-				status={mobileClass} 
-				menuToggle={this.menuToggle} 
-				entries={this.state.entries}
-				images={this.state.images}
-				activeImage={this.activeImage}
-			/>
-			<ul className="flex">
-				<li className="col-10-12 left">						
-					<Link to='/'><h1 className="click grey">machine</h1><br/></Link>
-					<Link to='/'><h1 className="click black">inq</h1></Link>
-					<Link to='/'><h1 className="click grey">uiry</h1><br/></Link>
-					<Link to='/'><h1 className="click black">studio</h1></Link>	
-				</li>
-				<li className="col-2-12 right">
-					<Link to='/'><h2 id='nav' className={productClass}>production</h2></Link>
-					<Link to='/research/000'><h2 id='nav' className={resClass}>research</h2></Link>
-					<Link to='/profile/'><h2 id='nav' className={profileClass}>profile</h2></Link>
-					<Menu x1="0" x2="80" className={hamburgerClass} onClick={this.handleClick} />
-				</li>
-			</ul>
-		</nav>
-	);
-  }
+		return 	(
+			<nav className={homeClass}>
+				<NavMobile 	
+					status={mobileClass}
+					activePage={activePage}
+					entries={entries}
+					projects={projects}
+					menuToggle={this.menuToggle}
+					changeProject={this.changeProject}
+				/>
+				<ul className="flex">
+					<li className="col-10-12 left">						
+						<Link to='/'><h1 className="click grey">machine</h1><br/></Link>
+						<Link to='/'><h1 className="click black">inq</h1></Link>
+						<Link to='/'><h1 className="click grey">uiry</h1><br/></Link>
+						<Link to='/'><h1 className="click black">studio</h1></Link>	
+					</li>
+					<li className="col-2-12 right">
+						<Link to='/'><h2 id='nav' className={productClass}>production</h2></Link>
+						<Link to='/research/000'><h2 id='nav' className={resClass}>research</h2></Link>
+						<Link to='/profile/'><h2 id='nav' className={profileClass}>profile</h2></Link>
+						<Menu x1="0" x2="80" className={hamburgerClass} onClick={this.menuToggle} />
+					</li>
+				</ul>
+			</nav>
+		);
+  	}
 }
 
 export default NavTop;

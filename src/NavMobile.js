@@ -8,35 +8,53 @@ class NavMobile extends Component {
         super(props);
     
         this.state = {
-            entries: props.entries || [],
-            images: props.images || [],
+            activePage: props.activePage,
+            entries: props.entries,
+            projects: props.projects,
+            productionTab: props.activePage === "production",
+            researchTab: props.activePage === "research"
         }
-      }
-
-    changeImage = (id) => {
-        this.props.activeImage(id);
     }
 
-    menuToggle = () => {
-        this.props.menuToggle();
+    changeProject = (id) => { this.props.changeProject(id); }
+
+    menuToggle = () => { this.props.menuToggle(); }
+
+    toggleProduction = () => { 
+        this.setState((prevState) => ({
+            productionTab: !prevState.productionTab,
+        }));
+    }
+    toggleResearch = () => { 
+        this.setState((prevState) => ({
+            researchTab: !prevState.researchTab,
+        }));
     }
 
     render() {
-        const researchList = this.state.entries.map((entry, i) => {
-            const link = entry.number;
-            return (
-                <Link to={link} key={i}>
-                    <h4 className="click">{entry.number + ": " + entry.title}</h4>
-                </Link>
-            );
-        })
 
-        const productList = this.state.images.map((img) => {
-            const id = img.index;
-            return (
-                <h4 key={id} className="click" onClick={() => this.changeImage(id)}>{img.title}</h4>
-            );
-        })
+        const { entries, projects, productionTab, researchTab } = this.state;
+
+        const productList = productionTab
+            ? projects.map((img, i) => {
+                return (
+                    <h4 key={i+'pr'} className="click" onClick={() => this.changeProject(i) }>
+                        • {img.title}
+                    </h4>
+                );
+              })
+            : null;
+
+        const researchList = researchTab
+            ? entries.map((entry, i) => {
+                const link = /research/ + entry.number;
+                return (
+                    <Link key={i+'rs'} to={link} >
+                        <h4 className="click">{entry.number + ": " + entry.title}</h4>
+                    </Link>
+                );
+              })
+            : null;
 
 	    return (
             <div id="nav-mobile" className={this.props.status}>
@@ -49,16 +67,16 @@ class NavMobile extends Component {
                             <Link to='/'><h1 className="click grey">uiry</h1><br/></Link>
                             <Link to='/'><h1 className="click black">studio</h1></Link>
                         </li>
-                        <li className="left half-break" onClick={this.menuToggle}>
-                            <Link to='/research/000'><h1>Research</h1></Link>
-                            <div className="list-select">
-                                {researchList}
+                        <li className="left half-break">
+                            <h1 onClick={this.toggleProduction}>Production</h1>
+                            <div className="list-select" onClick={this.menuToggle}>
+                                {productList}
                             </div>
                         </li>
-                        <li className="left half-break" onClick={this.menuToggle}>
-                            <Link to='/'><h1>Production</h1></Link>
-                            <div className="list-select">
-                                {productList}
+                        <li className="left half-break">
+                            <h1 onClick={this.toggleResearch}>Research</h1>
+                            <div className="list-select" onClick={this.menuToggle}>
+                                {researchList}
                             </div>
                         </li>
                         <li className="left half-break" onClick={this.menuToggle}>

@@ -8,7 +8,7 @@ class Viewer extends Component {
     super(props);
 
     this.state = {
-      display: props.display,
+      display: props.display || [],
       index: 0
     }
   }
@@ -38,8 +38,10 @@ class Viewer extends Component {
     const { title, subtext, files } = this.state.display;
     const index = this.state.index;
 
-    const fileClass = files.map((f, i) => 
-      i === index ? "pad-select click bold" : "pad-select click");
+    const fileClass = files.map((f, i) => i === index 
+      ? "pad-select click bold" 
+      : "pad-select click"
+    );
 
     const fileMap = files.map((img, i) =>
       <h6 key={i} className={fileClass[i]} onClick={this.select(i)}>
@@ -47,25 +49,24 @@ class Viewer extends Component {
       </h6>
     );
 
-    const container = this.state.animated 
-      ? <div/> 
-      : <div className="image-container" onClick={this.increment}>
-          <Image
-            src={require("./images/" + files[index])}
-            className={"quick-appear center-fit"}
-          />;
-        </div>
+    const viewer = 
+      <div className="image-container" onClick={this.increment}>
+        <Image
+          src={require("./images/" + files[index])}
+          className={"quick-appear center-fit"}
+        />
+      </div>
                 
     return (
         <section>
-          {container}
+          {viewer}
           <div className="half-break" />
           <div className="flex table">
             <div className="col-9-12">
               <h4>{title}</h4>
               <h5><i>{subtext}</i></h5>
             </div>
-            <div className="col-3-12 right">
+            <div className="col-2-12 right">
               {fileMap}
             </div>
           </div>

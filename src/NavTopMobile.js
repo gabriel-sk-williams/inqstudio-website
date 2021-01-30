@@ -8,17 +8,14 @@ class NavTopMobile extends Component {
 	}
 
 	render() {
-        const exitClass = "exit-shape";
-
         return 	(
             <nav className="">
                 <div className="nav-table">
                     <div className="mobile-left col-6-12" onClick={this.handleClick} />
                     <div className="mobile-right col-6-12">
-                        <ExitShape 
-                            x1="0" 
-                            x2="50" 
-                            className={exitClass} 
+                        <ExitShape
+                            size={36}
+                            className="exit-shape"
                             onClick={this.handleClick} 
                         />
                     </div>

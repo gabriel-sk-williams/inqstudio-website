@@ -42,7 +42,7 @@ class I001 extends Component {
   }
 
   super = (int) => {
-    return ( <sup>{int}</sup> );
+    return <sup>{int}</sup>;
   }
   
   renderEssay = () => {
@@ -54,7 +54,7 @@ class I001 extends Component {
         </q>
         <br/>
         <p className="tab">—Leonardo da Vinci, 1494</p>
-        <br/><br/>
+        <br/>
         I.<br/>
         The modern conception of an 'ecosystem' is relatively new. The term only first appeared in Oxford's Ecology journal in 1935, in a publication titled <i>The Use and Abuse of Vegetational Concepts and Terms.</i> The essay, written by English botanist Sir Arthur George Tansley, is recognized as the originating force behind the idea that organisms and plant life are part of greater self-regulating systems—"ecosystems"—which form the “basic units of nature.” A theory of an 'ecological system' may seem like a natural idea now, but it was Tansley who first gave it name and scope, and therefore the basis for study in the name of Science. Nearly everything else had been reduced to some systemic theory by then, in accordance with various rational principles; Nature was merely one of several remaining frontiers. Tansley writes:
         <br/><br/><i>"...the constant interchange of the most various kinds within each system, not only between the organisms but between the organic and the inorganic. These </i>ecosystems,<i> as we may call them, are of the most various kinds and sizes. They form one category of the multitudinous physical systems of the universe, which range from the universe as a whole down to the atom. <br/><br/> The whole method of science, as H. Levy has most convincingly pointed out, is to isolate systems mentally for the purposes of study, so that the series of isolates we make become the actual objects of our study, whether the isolate be a solar system, a planet, a climatic region, a plant or animal community, an individual organism, an organic molecule or an atom. Actually the systems we isolate mentally are not only included as parts of larger ones, but they also overlap, interlock and interact with one another. The isolation is partly artificial, but is the only possible way in which we can proceed."{this.super(1)}</i><br/><br/>

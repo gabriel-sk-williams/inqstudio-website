@@ -9,8 +9,12 @@ class EntryList extends Component {
 
     this.state = {
       entries: props.entries || [],
-      activeEntry: props.activeEntry || 1
+      activeEntry: props.activeEntry,
     }
+  }
+
+  componentWillUpdate(nextProps) {
+    if (this.props !== nextProps) this.setState({ activeEntry: nextProps.activeEntry })
   }
   
   handleClick = (index) => (event) => {
@@ -21,27 +25,23 @@ class EntryList extends Component {
   }
 
   render() {
-    const list = this.state.entries.map((entry) => {
-      const i = entry.index;
+    const { entries, activeEntry } = this.state;
+    const list = entries.map((entry, i) => {
       const link = "/research/" + entry.number;
       
-      if (i !== this.state.activeEntry){
-        return(
-          <Link to={link} key={i}>
+      return i === activeEntry
+        ? null
+        : <Link to={link} key={i}>
             <div className="slow-appear grid-break right">
               <h3 className="click">{entry.number + ": " + entry.title}</h3>
               <h2 className="italic">{entry.tags}</h2>
             </div>
-          </Link>               
-        );
-        }else{
-          return null;
-        }
+          </Link>  
     })
 
     return (
       <div>
-          {list}
+        {list}
       </div>
     );
   }

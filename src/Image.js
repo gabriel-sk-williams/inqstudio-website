@@ -16,7 +16,7 @@ class Image extends Component {
                     zIndex: this.props.zIndex,
                     cursor: "pointer"
                 }}
-            />
+            / >
         );
     }
 }

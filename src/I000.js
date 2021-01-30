@@ -9,12 +9,6 @@ class I000 extends Component {
 
     this.state = {
       entries: props.entries,
-      sources: 
-        [{
-          source: "",
-          author: "",
-          index: 0,
-        }]
     }
   }
 
@@ -32,30 +26,24 @@ class I000 extends Component {
         Consider the following essays as scale models of our own process. Here we attempt to reduce the intersections of science, philosphy, and politics to their core presuppositions and revisit their original bearings. Some dogmas must be refined, others discarded. These are sketches of a map which might eventually reflect the territory.
         </h3><br/>
       </div>
-    )
+    );
   }
 
   render() {
     const order = this.state.entries.map((entry, index) => "click appear-"+index);
     const italo = this.state.entries.map((entry, index) => "italic appear-"+index);
 
-    const list = this.state.entries.map((entry) => {
-      const i = entry.index;
-      const link = "/research/" + entry.number;
-      
-      if (i !== 0){
-        return (
-          <Link to={link} key={i}>
+    const list = this.state.entries.map((entry, i) => {
+      const link = "/research/"+entry.number;
+      return i === 0 
+        ? null
+        : <Link to={link} key={i}>
             <div className="left half-break">
               <h3 className={order[i]}>{entry.number}: {entry.title}</h3>
               <h2 className={italo[i]}>{entry.tags}</h2>
             </div>
-          </Link>               
-        );
-        }else{
-          return null;
-        }
-    })
+          </Link>
+    });
 
     return (
       <div>

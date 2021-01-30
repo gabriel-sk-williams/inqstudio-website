@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Image from './Image';
 import './Inqstyles.css';
 
 class ThumbnailGrid extends Component {
@@ -8,8 +7,8 @@ class ThumbnailGrid extends Component {
     super(props);
 
     this.state = {
-      activeImg: props.activeImg || 0,
-      images: props.images || [],
+      activeProject: props.activeProject || 0,
+      projects: props.projects || [],
     }
   }
 
@@ -23,15 +22,15 @@ class ThumbnailGrid extends Component {
 
   handleClick = (index) => (event) => {
     this.setState({
-      activeImg: index,
+      activeProject: index,
     })
     this.props.onClick(index);
   }
 
   render() {
 
-    const thumbClass = this.state.images.map((img, i) => "thumbnail appear-" + i);
-    const thumbs = this.state.images.map((image, i) => {
+    const thumbClass = this.state.projects.map((img, i) => "thumbnail appear-" + i);
+    const thumbs = this.state.projects.map((image, i) => {
       const [ stillThumb, gifThumb ] = image.thumb;
       return (
         <div key={i} className="thumb-container" onClick={this.handleClick(i)}>
@@ -39,8 +38,8 @@ class ThumbnailGrid extends Component {
             src={require("./images/" + stillThumb)}
             onMouseOver={e => (e.currentTarget.src = require("./images/" + gifThumb))}
             onMouseOut={e => (e.currentTarget.src = require("./images/" + stillThumb))}
-            alt="ja boy"
             className={thumbClass[i]}
+            alt="ja boy"
           />
         </div>
       );
@@ -57,16 +56,3 @@ class ThumbnailGrid extends Component {
 }
 
 export default ThumbnailGrid;
-
-/*
-return (
-  <div key={i} className="thumb-container" onClick={this.handleClick(i)}>
-    <Image  
-      src={require("./images/" + stillThumb)}
-      onMouseOver={require("./images/" + gifThumb)}
-      onMouseOver={require("./images/" + gifThumb)}
-      className={thumbClass[i]}
-    />
-  </div>
-);
-*/
