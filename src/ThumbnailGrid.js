@@ -39,7 +39,7 @@ class ThumbnailGrid extends Component {
             onMouseOver={e => (e.currentTarget.src = require("./images/" + gifThumb))}
             onMouseOut={e => (e.currentTarget.src = require("./images/" + stillThumb))}
             className={thumbClass[i]}
-            alt="ja boy"
+            alt={image.title}
           />
         </div>
       );

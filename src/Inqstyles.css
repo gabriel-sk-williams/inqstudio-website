@@ -352,10 +352,6 @@ section {
   background-position: center center;
 }
 
-.thumb-container{
-  padding-right: 27px;
-  padding-bottom: 27px;
-}
 .logo-container{
   padding-right: 9px;
 }
@@ -365,6 +361,11 @@ section {
   height: 180px;
   width: 180px;
   z-index: 300;
+}
+
+.thumb-container{
+  padding-right: 27px;
+  padding-bottom: 27px;
 }
 
 .thumbnail:hover{
@@ -739,6 +740,32 @@ MEDIA
     font-size: 1rem;
     line-height: 1.6rem;
     margin-left:60px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .thumbnail{
+    height: 136px;
+    width: 136px;
+  }
+
+  .thumb-container{
+    padding-right: 22px;
+    padding-bottom: 18px;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  .thumbnail{
+    cursor: pointer;
+    height: 124px;
+    width: 124px;
+    z-index: 300;
+  }
+
+  .thumb-container{
+    padding-right: 17px;
+    padding-bottom: 13px;
   }
 }
 

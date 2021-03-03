@@ -40,6 +40,7 @@ class Production extends Component {
         displayViewer: !this.state.displayViewer
       }); 
     }
+    window.scrollTo(0,0);
   }
 
   render() {
