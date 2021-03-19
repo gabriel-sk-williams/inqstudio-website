@@ -9,7 +9,7 @@ function AppRouter() {
     const entries = 
       [{
         number: "000",
-        title: "Surface Primer",
+        title: "A Block of Marble",
         tags: "a triumphant return to the mid-length weblog essay format",
       },
       {

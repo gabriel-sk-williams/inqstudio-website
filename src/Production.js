@@ -7,17 +7,16 @@ class Production extends Component {
 
   constructor (props) {
     super(props);
-
     this.state = {
-      displayViewer: props.displayViewer || false,
       projects: props.projects || [],
-      activeProject: props.activeProject || 0
+      activeProject: props.activeProject || 0,
+      displayViewer: props.displayViewer || false
     }
   }
 
   componentWillUpdate(nextProps) {
     if (this.props !== nextProps) {
-      if (this.props.activeProject !== nextProps.activeProject) {
+      if (this.props.activeProject) {
         this.setState({ 
           displayViewer: true,
           activeProject: nextProps.activeProject
@@ -40,11 +39,11 @@ class Production extends Component {
         displayViewer: !this.state.displayViewer
       }); 
     }
-    window.scrollTo(0,0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   render() {
-    const { displayViewer, projects, activeProject } = this.state;
+    const { projects, activeProject, displayViewer } = this.state;
     const fileset = projects[activeProject];
     const disp = displayViewer ? "active-viewer" : "hidden-viewer"
     const displayClass = "col-12-12 half-break " + disp;

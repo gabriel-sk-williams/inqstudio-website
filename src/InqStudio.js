@@ -8,11 +8,11 @@ class InqStudio extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            activePage: props.activePage || "production",
-            entries: props.entries || [],
+            activePage: props.activePage,
             activeEntry: props.activeEntry || 0,
+            entries: props.entries || [],
             projects: props.projects || [],
-            activeProject: props.activeProject || 0,
+            activeProject: 0,
             displayViewer: false
         }
     }
@@ -26,7 +26,7 @@ class InqStudio extends Component {
         }
     }
 
-    handleClick = (id) => {
+    handleMobileClick = (id) => {
         this.setState({
             activePage: "production",
             activeProject: id,
@@ -35,19 +35,17 @@ class InqStudio extends Component {
     }
 
     render() {
-        const { activePage, entries, activeEntry } = this.state;
-        const { projects, activeProject, displayViewer} = this.state;
-        const component = activePage === "production"
+        const { activePage, activeEntry, entries, projects } = this.state;
+        const { activeProject, displayViewer } = this.state; // from NavMobile
+        const component = 
+            activePage === "production"
             ? <Production 
-                displayViewer={displayViewer}
                 projects={projects} 
                 activeProject={activeProject} 
-            />
-            : activePage === "research"
-            ? <Research
-                activeEntry={activeEntry} 
-                entries={entries} 
+                displayViewer={displayViewer}
               />
+            : activePage === "research"
+            ? <Research activeEntry={activeEntry} entries={entries} />
             : <Profile />
 
         return (
@@ -57,7 +55,7 @@ class InqStudio extends Component {
                         activePage={activePage}
                         projects={projects} 
                         entries={entries} 
-                        onClick={this.handleClick}
+                        onClick={this.handleMobileClick}
                     />
                     {component}
                 </div>

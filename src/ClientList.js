@@ -64,7 +64,7 @@ class ClientList extends Component {
         return (
             <footer id="footer">
               <div className="flex-column">
-                <h3 className="bold">Our previous clients and partners:</h3>
+                <h3 className="bold">Previous clients and partners:</h3>
                 <ul className="flex-grid gap">
                   {logos}
                 </ul>

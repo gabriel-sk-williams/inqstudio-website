@@ -10,21 +10,24 @@ class NavTop extends Component {
 
 		this.state = {
 			menuStatus: false,
-			activePage: props.activePage || "production",
+			activePage: props.activePage,
 			entries: props.entries || [],
 			projects: props.projects || []
 			}
 	}
+
+	componentWillUpdate(nextProps) {
+        if (this.props !== nextProps) this.setState({ activePage: nextProps.activePage, });
+    }
+
+	changeProject = (id) => { this.props.onClick(id); }
 
 	menuToggle = () => {
     	this.setState({
       		menuStatus: !this.state.menuStatus
 		});
 	}
-	
-	changeProject = (id) => {
-		this.props.onClick(id);
-	}
+
 
 	render() {
 		const { activePage, entries, projects, menuStatus } = this.state;
@@ -58,9 +61,15 @@ class NavTop extends Component {
 						<Link to='/'><h1 className="click black">studio</h1></Link>	
 					</li>
 					<li className="col-2-12 right">
-						<Link to='/'><h2 id='nav' className={productClass}>production</h2></Link>
-						<Link to='/research/000'><h2 id='nav' className={resClass}>research</h2></Link>
-						<Link to='/profile/'><h2 id='nav' className={profileClass}>profile</h2></Link>
+						<Link to='/'>
+							<h2 id='nav' className={productClass}>production</h2>
+						</Link>
+						<Link to='/research/000'>
+							<h2 id='nav' className={resClass}>research</h2>
+						</Link>
+						<Link to='/profile/'>
+							<h2 id='nav' className={profileClass}>profile</h2>
+						</Link>
 						<Menu x1="0" x2="80" className={hamburgerClass} onClick={this.menuToggle} />
 					</li>
 				</ul>
