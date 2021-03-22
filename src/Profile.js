@@ -55,6 +55,11 @@ class Profile extends Component {
              target="_blank">
             <h5 className="link">LinkedIn</h5>
           </a>
+          <a rel="noopener noreferrer"
+            href={"https://twitter.com/FUTUREDOME3000"}
+            target="_blank">
+            <h5 className="link">Twitter</h5>
+          </a>
         </div>
       </div>
     );
@@ -62,12 +67,7 @@ class Profile extends Component {
 }
 
 /*
-  <a 
-    rel="noopener noreferrer"
-    href={"https://twitter.com/FUTUREDOME3000"}
-    target="_blank">
-    <h5 className="link">Twitter</h5>
-  </a>
+ 
 */
 
 export default Profile;

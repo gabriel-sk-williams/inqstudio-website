@@ -9,7 +9,7 @@ function AppRouter() {
     const entries = 
       [{
         number: "000",
-        title: "A Block of Marble",
+        title: "The Block of Marble",
         tags: "a triumphant return to the mid-length weblog essay format",
       },
       {
@@ -39,6 +39,12 @@ function AppRouter() {
 
       const projects = 
         [{
+          title: "The Route Through Rondo",
+          subtext: "When city officials began planning the route for Interstate 94 to connect the Twin Cities, they considered two options: the first would have drawn a new highway along an existing rail corridor to the North. The second, however—the route through Rondo neighborhood—was more direct. It had also already been redlined by the Federal Home Loan Bank Board in concert with the Home Owners' Loan Corporation in 1936. Like many other thriving black communities in cities across America, Rondo was designated for demolition in 1956.",
+          thumb: ['rondoSquare.jpg', 'rondoSquare.jpg'],
+          files: ['rondo0.jpg', 'rondo1.jpg', 'rondo2.jpg', 'rondo3.jpg', 'rondo4.jpg', 'rondo5.jpg', 'rondo6.jpg',],
+        },
+        {
           title: "Parking Analysis in Los Angeles",
           subtext: "With plans to construct a new coliving development, Common commissioned our analysis on the massive municipal datasets for Culver City and Greater Los Angeles. Since most residents of Los Angeles are dependent on cars, residential developers are forced to build expensive parking garages and pass along the cost to their tenants. The only way to break the cycle of auto-centricity is to build denser housing and promote walkability—by locating existing garages and referencing them with recent construction trends, Six Peak Capital could run improved calculations on the possibility of reduced parking.",
           thumb: ['culverSquare.jpg', 'culverSquare.jpg'],

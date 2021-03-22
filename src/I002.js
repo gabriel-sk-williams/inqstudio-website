@@ -82,7 +82,7 @@ class I002 extends Component {
         Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.
         </q>
         <br/><br/>
-        We find a number of problems with this definition: it reduces sustainability to a human-centric resource allocation problem; it fails to define a precise number of “future generations;” it also engenders a sort of tunnel vision that may yet favor unsustainable solutions over shorter time horizons. “Agreement on a singular definition” may not even be a top priority—we have a more vital communication problem to sort out, and it probably involves <i>a lot</i> of definitions. A large chunk of the problem is in fact philosophical—and it's <i>everyone's</i> problem now.
+        We find a number of problems with this definition: it reduces sustainability to a human-centric resource allocation problem; it fails to define a precise number of “future generations;” and it also engenders a sort of tunnel vision that may yet favor unsustainable solutions within certain time horizons. It may not even be a top priority to find a singular, universal definition —we have a more vital communication problem to sort out, and it probably involves <i>a lot</i> of definitions. A large chunk of the problem is in fact philosophical—and it's <i>everyone's</i> problem now.
         </h3>
       </div>
     )
