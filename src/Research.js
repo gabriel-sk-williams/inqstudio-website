@@ -20,9 +20,7 @@ class Research extends Component {
 
   componentWillUpdate(nextProps) {
     if(this.props !== nextProps) {
-      this.setState({
-       activeEntry: nextProps.activeEntry
-      });
+      this.setState({ activeEntry: nextProps.activeEntry });
     }
   }
 
