@@ -15,7 +15,7 @@ class Profile extends Component {
         <h3 className="bold">• Data analysis</h3>
         <h3>Some project pipelines require the curation and maintenance of novel datasets in service of more complex insights. from simple database queries to multi-dimensional analytics, our process is collaborative and client-specific.</h3><br/>
         <h3 className="bold">• 3D modeling, rendering, prototyping and printing</h3>
-        <h3>Some ideas are best worked out in three dimensions. our firm provides the technical expertise to bring specialized installations, prototypes physical projects to fruition. art, architecture, and product</h3>
+        <h3>Some ideas are best worked out in three dimensions. our firm provides the technical expertise to bring specialized installations, prototypes physical projects to fruition.</h3>
         <div className="col-12-12 grid-break">
           <ClientList/>
         </div>
