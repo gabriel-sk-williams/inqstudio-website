@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
 import './Inqstyles.css';
 
 class I004 extends Component {
@@ -47,7 +48,14 @@ class I004 extends Component {
   render() {
     return (
         <div>
-            {this.renderEssay()}
+          <Helmet>
+            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:site" content="@FUTUREDOME3000" />
+            <meta name="twitter:title" content="004: At Scale of Men" />
+            <meta name="twitter:description" content="It's quite cold outside, you know. Nearly 255 degrees Kelvin!" />
+            <meta name="twitter:image" content="https://imgur.com/a/3FGc6dV" />
+          </Helmet>
+          {this.renderEssay()}
         </div>
     );
   }
