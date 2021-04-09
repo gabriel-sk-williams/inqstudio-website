@@ -95,7 +95,7 @@ class I003 extends Component {
           <meta name="twitter:site" content="@FUTUREDOME3000" />
           <meta name="twitter:title" content="003: Absolute Units" />
           <meta name="twitter:description" content="The meter! A perfect one-ten millionth of the distance from the equator to the north pole along a meridian. The kilogram! A cubic decimeter of water. And oh, Celsius! Tied to the fundamental physical constants of this earthly prison!" />
-          <meta name="twitter:image" content="https://www.inqstudio.com/assets/001_card.jpg" />
+          <meta name="twitter:image" content="https://www.inqstudio.com/assets/003_card.jpg" />
         </Helmet>
         {this.renderEssay()}
         {this.renderSources()}

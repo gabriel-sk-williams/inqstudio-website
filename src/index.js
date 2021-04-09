@@ -15,7 +15,7 @@ function AppRouter() {
       },
       {
         number: "001",
-        title: "Limits to Sustainability",
+        title: "World Machine",
         date: "6 March 2019",
         tags: "on perpetual motion, equilibrium, and Enlightenment ecosystems",
       },
