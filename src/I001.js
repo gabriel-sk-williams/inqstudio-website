@@ -100,7 +100,7 @@ class I001 extends Component {
     return (
       <div>
           <Helmet>
-            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:card" content="summary_large_image"></meta>
             <meta name="twitter:site" content="@FUTUREDOME3000" />
             <meta name="twitter:title" content="001: Limits to Sustainability" />
             <meta name="twitter:description" content="Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists." />
