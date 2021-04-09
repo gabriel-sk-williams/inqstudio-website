@@ -61,7 +61,7 @@ class I003 extends Component {
         In matters of suitability, a universal system of measures and units can fall short. It's not that the American Imperial system is somehow universally superior (although sometimes it is), nor is this an attempted takedown of the metric system and its units. For many applications, metric is the best option—but to make metric into a singular, universal system destroys the potential usefulness of alternative units—especially in situations where scale and granularity are paramount, but unserved by metric at that order of magnitude.
         <br/><br/>
         II.<br/>
-        I can hear someone wailing now: “The metric system is perfectly derived from the essential building blocks of life: The meter! A perfect one-ten millionth of the distance from the equator to the north pole along a meridian. The kilogram! A cubic decimeter of water. And oh, Celsius! Tied to the fundamental physical constants of this earthly prison! Zero degrees is the exact freezing point of water, and one hundred the boiling. The critical phase changes of <i>matter itself</i>—”
+        I can hear someone wailing now: “The metric system is perfectly derived from the essential building blocks of life: The meter! A perfect one-ten millionth of the distance from the equator to the north pole along a meridian. The kilo-gram! A cubic decimeter of water. And oh, Celsius! Tied to the fundamental physical constants of this earthly prison! Zero degrees is the exact freezing point of water, and one hundred the boiling. The critical phase changes of <i>matter itself</i>—”
         <br/><br/>
         We weren't always blessed with the metric system: in fact, most of human history was plagued by <i>lesser</i> systems until the Enlightenment. One of the first prominent calls for global standardization came in 1783, from British inventor James “The Steam Engine” Watt—who envisioned a new system, one “which might link the density of water to length and mass.” This was because Watt found collaboration with other civilized nations significantly more difficult without common units, especially those he could not easily replicate. He wasn't at all misguided: the people of pre-revolutionary France were using around eight hundred different measurement units,{this.super(2)} all with definitions that differed between municipalities. Without rigorous standardization, attempts at trans-national cooperation were very likely to lose something in translation.
         <br/><br/>
@@ -94,7 +94,7 @@ class I003 extends Component {
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:site" content="@FUTUREDOME3000" />
           <meta name="twitter:title" content="003: Absolute Units" />
-          <meta name="twitter:description" content="The meter! A perfect one-ten millionth of the distance from the equator to the north pole along a meridian. The kilogram! A cubic decimeter of water. And oh, Celsius! Tied to the fundamental physical constants of this earthly prison!" />
+          <meta name="twitter:description" content="“The meter! A perfect one-ten millionth of the distance from the equator to the north pole along a meridian. The kilo-gram!...”" />
           <meta name="twitter:image" content="https://www.inqstudio.com/assets/003_card.jpg" />
         </Helmet>
         {this.renderEssay()}

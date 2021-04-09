@@ -29,7 +29,7 @@ class I004 extends Component {
         <br/><br/>
         AREA — Champion: Hectares
         <br/>
-        My ongoing startup project <a href="http://adaptivecity.io/">Adaptive</a> has me reviewing the literature for urban economics, where the hectare has proven to be super useful for measuring and understanding density. The hectare is ideal because it's about the size of a city block, which is oft-repeated in by planners anyway; a Manhattan block actually takes up two hectares, while those in Brooklyn are often exactly one or one-and-a-half. In Paris and Rome, blocks range from about one-half to one hectare. This is, of course, a happy accident: block size has nothing to do with the circumference of the world, and because metric measurements run between orders of magnitude, we are simply lucky that hectares happen to be commensurate. 
+        In review of urban economic literature for our new product, <a href="http://adaptivecity.io/">Adaptive</a>, the hectare has proven to be super useful for measuring and understanding density. It's about the size of a city block, which is oft-repeated in by planners anyway; a Manhattan block actually takes up two hectares, while those in Brooklyn are often exactly one or one-and-a-half. In Paris and Rome, blocks range from about one-half to one hectare. This is, of course, a happy accident: block size has nothing to do with the circumference of the world, and because metric measurements run between orders of magnitude, we are simply lucky that hectares happen to be commensurate. 
         <br/><br/>
         It bears mentioning that hectares are just a little over two <i>acres</i>, which represented the amount of land tillable by one man behind one ox in one day. In the business of farming, for some centuries, you were likely to also use <i>furlongs, oxgangs, virgates,</i> and <i>carucates</i>. All of these measures were specific to oxen and farmland, and immediately helpful for gauging the outputs of your estate.
         <br/><br/>
@@ -52,7 +52,7 @@ class I004 extends Component {
             <meta name="twitter:card" content="summary_large_image"></meta>
             <meta name="twitter:site" content="@FUTUREDOME3000" />
             <meta name="twitter:title" content="004: At Scale of Men" />
-            <meta name="twitter:description" content="In continuation of the previous essay, inqstudio hereby presents Battle Royale: Weights and Measures Edition, where the world's remaining measurement systems compete for recognition from a sole arbiter." />
+            <meta name="twitter:description" content="In continuation of the previous essay, inqstudio hereby presents a Battle Royale for Weights and Measures..." />
             <meta name="twitter:image" content="https://www.inqstudio.com/assets/004_card.jpg" />
           </Helmet>
           {this.renderEssay()}

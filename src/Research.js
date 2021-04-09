@@ -31,6 +31,7 @@ class Research extends Component {
 
   render() {
     const { activeEntry, entries } = this.state;
+
     const content =
       activeEntry === 0 ? <I000 entries={entries} /> :
       activeEntry === 1 ? <I001 /> :
