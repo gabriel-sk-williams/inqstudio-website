@@ -53,7 +53,7 @@ class I004 extends Component {
             <meta name="twitter:site" content="@FUTUREDOME3000" />
             <meta name="twitter:title" content="004: At Scale of Men" />
             <meta name="twitter:description" content="It's quite cold outside, you know. Nearly 255 degrees Kelvin!" />
-            <meta name="twitter:image" content="https://imgur.com/a/3FGc6dV" />
+            <meta name="twitter:image" content="https://www.inqstudio.com/assets/001_card.jpg" />
           </Helmet>
           {this.renderEssay()}
         </div>

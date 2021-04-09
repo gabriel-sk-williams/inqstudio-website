@@ -103,7 +103,7 @@ class I002 extends Component {
           <meta name="twitter:site" content="@FUTUREDOME3000" />
           <meta name="twitter:title" content="002: A Modern Neologic" />
           <meta name="twitter:description" content="And here begins my despair as a writer. All language is a set of symbols whose use among its speakers assumes a shared past." />
-          <meta name="twitter:image" content="https://imgur.com/a/3FGc6dV" />
+          <meta name="twitter:image" content="https://www.inqstudio.com/assets/001_card.jpg" />
         </Helmet>
         {this.renderEssay()}
         {this.renderSources()}
