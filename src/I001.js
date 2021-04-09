@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
 import {Helmet} from "react-helmet";
 import './Inqstyles.css';
 
