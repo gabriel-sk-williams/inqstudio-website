@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
 import './Inqstyles.css';
 
 class I001 extends Component {
@@ -98,10 +99,13 @@ class I001 extends Component {
   render() { 
     return (
       <div>
-          <meta name="twitter:site" content="@FUTUREDOME3000" />
-          <meta name="twitter:title" content="Limits to Sustainability" />
-          <meta name="twitter:description" content="001: testing the limits of react" />
-          <meta name="twitter:image" content="https://imgur.com/jKnVaEp" />
+          <MetaTags>
+            <meta name="twitter:card" content="summary"></meta>
+            <meta name="twitter:site" content="@FUTUREDOME3000" />
+            <meta name="twitter:title" content="Limits to Sustainability" />
+            <meta name="twitter:description" content="001: testing the limits of react" />
+            <meta name="twitter:image" content="https://imgur.com/jKnVaEp" />
+          </MetaTags>
           {this.renderEssay()}
           {this.renderSources()}
       </div>
