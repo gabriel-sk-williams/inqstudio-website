@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import InqStudio from './InqStudio';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -163,6 +164,7 @@ function AppRouter() {
   }
   
   serviceWorker.unregister();
-  ReactDOM.render(<AppRouter />, document.getElementById('root'));
+  render(<AppRouter />, document.getElementById('root'));
 
+  // ReactDOM.render(<AppRouter />, document.getElementById('root'));
   export default AppRouter;
