@@ -102,9 +102,9 @@ class I001 extends Component {
           <Helmet>
             <meta name="twitter:card" content="summary"></meta>
             <meta name="twitter:site" content="@FUTUREDOME3000" />
-            <meta name="twitter:title" content="Limits to Sustainability" />
-            <meta name="twitter:description" content="001: testing the limits of react" />
-            <meta name="twitter:image" content="https://imgur.com/jKnVaEp" />
+            <meta name="twitter:title" content="001: Limits to Sustainability" />
+            <meta name="twitter:description" content="Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists." />
+            <meta name="twitter:image" content="https://imgur.com/a/3FGc6dV" />
           </Helmet>
           {this.renderEssay()}
           {this.renderSources()}
