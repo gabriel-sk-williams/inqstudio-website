@@ -98,9 +98,8 @@ class I001 extends Component {
   render() { 
     return (
       <div>
-          <meta name="twitter:card" content="test summary_large_image" />
           <meta name="twitter:site" content="@FUTUREDOME3000" />
-          <meta name="twitter:title" content="test TITLE_FOR_YOUR_PAGE" />
+          <meta name="twitter:title" content="Limits to Sustainability" />
           <meta name="twitter:description" content="001: testing the limits of react" />
           <meta name="twitter:image" content="https://imgur.com/jKnVaEp" />
           {this.renderEssay()}
