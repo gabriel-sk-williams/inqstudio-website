@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import './Inqstyles.css';
 
 class I001 extends Component {
@@ -88,7 +88,7 @@ class I001 extends Component {
         <br/><br/>
         ...
         <br/><br/>
-        The ancients conceived of a Gordian Knot, so twisted and complex as to be impossible to untie. Should anyone arrive claiming to be Alexander, to tell us we can simply slice right through it—should we believe them? How can we reasonably evaluate so noble a document as the Paris Agreement, where the industrialized nations of the world contribute $100 billion per year to impoverished ones in pursuit of the Truly Sustainable, having no stake in the outcome, but with the unassailable faith that so much wealth could never be squandered.
+        The ancients conceived of a Gordian Knot, so twisted and complex as to be impossible to untie. Should anyone arrive claiming to be Alexander, to tell us we can simply slice right through it—should we believe them? How can we reasonably evaluate so noble a document as the Paris Agreement, where the industrialized nations of the world contribute $100 billion per year to impoverished ones in pursuit of the Truly Sustainable, having no stake in the outcome, but with the unassailable faith that so much wealth could never be squandered?
         <br/><br/>
         Is there not a chance we reckon with the impossible? There were Renaissance inventors who became obsessed with the possibility of creating a <i>perpetuum mobile</i>—a perpetual motion machine. Did they ever stop to consider the context and limits of their own knowledge? Have we ever stopped to think about ours? We likely should. There <i>are</i> limits—both to Science and State capacity—but there are also frontiers. We'll be exploring both.
         </h3>
