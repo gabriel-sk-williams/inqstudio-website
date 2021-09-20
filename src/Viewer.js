@@ -35,7 +35,7 @@ class Viewer extends Component {
   }
 
   render() {
-    const { title, subtext, files } = this.state.display;
+    const { title, subtext, files, link } = this.state.display;
     const index = this.state.index;
 
     const fileClass = files.map((f, i) => i === index 
@@ -49,13 +49,16 @@ class Viewer extends Component {
       </h6>
     );
 
+    // className="image-container"
     const viewer = 
-      <div className="image-container" onClick={this.increment}>
+      <div onClick={this.increment}>
         <Image
           src={require("./images/" + files[index])}
           className={"quick-appear center-fit"}
         />
       </div>
+    
+    const linkDisplay = <a href="http://adaptivecity.io/">{link}</a>
                 
     return (
         <section>
@@ -65,6 +68,7 @@ class Viewer extends Component {
             <div className="col-9-12">
               <h4>{title}</h4>
               <h5><i>{subtext}</i></h5>
+              <h5><i>{linkDisplay}</i></h5>
             </div>
             <div className="col-2-12 right">
               {fileMap}
@@ -74,6 +78,5 @@ class Viewer extends Component {
     );
   }
 }
-
 
 export default Viewer;

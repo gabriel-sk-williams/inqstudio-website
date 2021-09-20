@@ -123,6 +123,10 @@ h3 {
                                   supported by Chrome and Opera */
 }
 
+h3.link:hover {
+  color:var(--color-powder);
+}
+
 h4 {
   font-family:Montserrat;
   font-weight:300;
@@ -151,10 +155,6 @@ h5 {
 
 h5.link{
   cursor:pointer;
-}
-
-h5.link:hover{
-  color:var(--color-powder);
 }
 
 h6 {
@@ -194,9 +194,15 @@ a {
   cursor: pointer;
 }
 
-a:hover, a:visited {
-  color:var(--color-grey);
+a:hover {
+  color:var(--color-powder);
 }
+
+/*
+a:visited {
+  color:var(--color-black);
+}
+*/
 
 q {
   font-family:'EB Garamond', serif;
@@ -393,6 +399,7 @@ VIEWER SLIDE
 }
 
 .hidden-viewer{
+  height: 0;
   max-height:0%;
   transition:0.4s;
   overflow: hidden;
