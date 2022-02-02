@@ -9,7 +9,7 @@ class I004 extends Component {
     return (
       <div className="appear grid-break">
         <h3>
-        In continuation of the <Link to='003'>previous essay</Link>, inqstudio hereby presents <i>Battle Royale: Weights and Measures Edition</i>, where the world's remaining measurement systems compete for recognition from a sole arbiter. The metric system may be great for science and post-feudal taxation, but is it <i>universally</i> superior? The best unit for any given job is, in fact, context-dependent. We must act ourselves: what is really being compared, and why is that comparison valuable? How much does our system need to scale? At what level of granularity might we most efficiently communicate useful information? Several units may enter the Thunderdome—but only one may leave.
+        In continuation of the <Link to='003'>previous essay</Link>, inqstudio hereby presents <i>Battle Royale: Weights and Measures Edition</i>, where the world's remaining measurement systems compete for recognition from a sole arbiter. The metric system may be great for science and post-feudal taxation, but is it <i>universally</i> superior? The best unit for any given job is, in fact, context-dependent. We must ask ourselves: what is really being compared, and why is that comparison valuable? How much does our system need to scale? At what level of granularity might we most efficiently communicate useful information? Several units may enter the Thunderdome—but only one may leave.
         <br/><br/>
         TEMPERATURE — Champion: Fahrenheit
         <br/>
