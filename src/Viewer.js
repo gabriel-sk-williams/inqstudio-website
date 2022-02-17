@@ -65,7 +65,7 @@ class Viewer extends Component {
           {viewer}
           <div className="half-break" />
           <div className="flex table">
-            <div className="col-9-12">
+            <div className="col-9-12 blank">
               <h4>{title}</h4>
               <h5><i>{subtext}</i></h5>
               <h5><i>{linkDisplay}</i></h5>
