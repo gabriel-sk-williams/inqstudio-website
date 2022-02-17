@@ -759,17 +759,18 @@ MEDIA
 
 @media only screen and (max-width:600px) {
   .thumbnail{
-    height: 136px;
-    width: 136px;
+    height: 144px;
+    width: 144px;
   }
+  /*136*/
 
   .thumb-container{
-    padding-right: 22px;
+    padding-right: 23px;
     padding-bottom: 18px;
   }
 }
 
-@media only screen and (max-width:350px) {
+@media only screen and (max-width:374px) {
   .thumbnail{
     cursor: pointer;
     height: 124px;
