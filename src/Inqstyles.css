@@ -375,7 +375,7 @@ section {
 
 .thumb-container{
   padding-right: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 }
 
 .thumbnail:hover{
@@ -753,10 +753,9 @@ NAV
 
 @media only screen and (max-width:600px) {
   .thumbnail{
-    height: 144px;
-    width: 144px;
+    height: 180px;
+    width: 180px;
   }
-  /*136*/
 
   .thumb-container{
     padding-right: 23px;
@@ -767,6 +766,21 @@ NAV
     max-height: 260px;
   }
 }
+
+@media only screen and (max-width:412px) {
+  .thumbnail{
+    height: 152px;
+    width: 152px;
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .thumbnail{
+    height: 144px;
+    width: 144px;
+  }
+}
+
 
 @media only screen and (max-width:374px) {
   .thumbnail{
