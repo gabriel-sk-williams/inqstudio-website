@@ -48,7 +48,7 @@ function AppRouter() {
         },
         {
           title: "The Route Through Rondo",
-          subtext: "When city officials began planning the route for Interstate 94 to connect the Twin Cities, they considered two options: the first would have drawn a new highway along an existing rail corridor to the North. The second, however—the route through Rondo neighborhood—was more direct. It had also already been redlined by the Federal Home Loan Bank Board in concert with the Home Owners' Loan Corporation in 1936. Like many other thriving black communities in cities across America, Rondo was designated for lition in 1956.",
+          subtext: "When city officials began planning the route for Interstate 94 to connect the Twin Cities, they considered two options: the first would have drawn a new highway along an existing rail corridor to the North. The second, however—the route through Rondo neighborhood—was more direct. It had also already been redlined by the Federal Home Loan Bank Board in concert with the Home Owners' Loan Corporation in 1936. Like many other thriving black communities in cities across America, Rondo was designated for demolition in 1956.",
           link: null,
           thumb: ['rondoSquare.jpg', 'rondoSquare.jpg'],
           files: ['rondo0.jpg', 'rondo1.jpg', 'rondo2.jpg', 'rondo3.jpg', 'rondo4.jpg', 'rondo5.jpg', 'rondo6.jpg',],
