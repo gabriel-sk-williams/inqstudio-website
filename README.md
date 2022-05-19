@@ -1,4 +1,4 @@
-## website for our design / research / production studio.
+## Website for our design / research / production studio.
 
 Javascript / React
 
