@@ -1,4 +1,4 @@
-### Flagship website for design research production studio.
+## Flagship website for design research production studio.
 
 Javascript / React
 
